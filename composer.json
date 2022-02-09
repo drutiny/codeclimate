@@ -1,0 +1,21 @@
+{
+    "name": "drutiny/codeclimate",
+    "description": "Code Climate integration with Drutiny.",
+    "type": "library",
+    "require": {
+        "drutiny/drutiny": "3.1.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Waihi",
+            "email": "josh@joshwaihi.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+          "Drutiny\\CodeClimate\\": "src/"
+      }
+  },
+    "minimum-stability": "dev"
+}
