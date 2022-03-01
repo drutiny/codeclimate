@@ -87,7 +87,7 @@ class CodeClimate extends Format implements FilesystemFormatInterface {
         "categories" => array_intersect($this->categories, $policy->tags ?? []),
         // Allow a policy or audit to define a location. Otherwise to policy UUID
         // as this field is mandatory.
-        "location" => $tokens['location'] ?? $policy->uuid,
+        "location" => $tokens['location'] ?? $assessment->uri(),
         "severity" => in_array($response->getType(), ['notice', 'data']) ? 'info' : $this->severityMap[$response->getSeverity()],
         "fingerprint" => hash('sha256', json_encode($response->export())),
       ];
