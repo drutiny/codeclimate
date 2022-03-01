@@ -3,7 +3,7 @@
     "description": "Code Climate integration with Drutiny.",
     "type": "library",
     "require": {
-        "drutiny/drutiny": "3.1.x-dev"
+        "drutiny/drutiny": "^3.1.x-dev"
     },
     "license": "MIT",
     "authors": [
